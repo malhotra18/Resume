@@ -1,0 +1,544 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SIMPLE-RESUME-CV
+%% <https://github.com/zachscrivena/simple-resume-cv>
+%% This is free and unencumbered software released into the
+%% public domain; see <http://unlicense.org> for details.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% INSTRUCTIONS FOR COMPILING THIS DOCUMENT ("CV.tex")
+%% TEX ---(XeLaTeX)---> PDF:
+%%
+%% Method 1: Use latexmk for fully automated document generation:
+%%   latexmk -xelatex "CV.tex"
+%%   (add the -pvc switch to automatically recompile on changes)
+%%
+%% Method 2: Use XeLaTeX directly:
+%%   xelatex "CV.tex"
+%%   (run multiple times to resolve cross-references if needed)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper,10pt,oneside]{article}
+%\documentclass[letterpaper,10pt,oneside]{article}
+
+% Do not stop on errors during compilation.
+\nonstopmode
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PREAMBLE.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{CV-Preamble.tex}
+
+% CV Info (to be customized).
+\newcommand{\CVTitle}{Aman Malhotra's CV }
+\newcommand{\CVNote}{CV updated on {2016-08-26}}
+
+% PDF settings and properties.
+\hypersetup{
+pdftitle={\CVTitle},
+pdfauthor={Aman Malhotra},
+pdfsubject={},
+pdfcreator={XeLaTeX},
+pdfproducer={},
+pdfkeywords={},
+pdfpagemode={},
+bookmarks=true,
+unicode=true,
+bookmarksopen=true,
+pdfstartview=FitH,
+pdfpagelayout=OneColumn,
+pdfpagemode=UseOutlines,
+hidelinks,
+breaklinks}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACTUAL DOCUMENT.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%
+% TITLE BLOCK %
+%%%%%%%%%%%%%%%
+
+\title{Aman Malhotra}
+
+\begin{subtitle}
+\color{RoyalBlue}
+\href{http://in.linkedin.com/in/malhotra18}
+{in.linkedin.com/in/malhotra18}
+\par
+
+\href{mailto:am185uee@iitr.ac.in}
+{am185uee@iitr.ac.in}
+\color{black}
+\,\BulletSymbol\,
++91\ 7895473588
+\end{subtitle}
+
+\begin{body}
+
+%%%%%%%%%%%%%%%
+%% EDUCATION %%
+%%%%%%%%%%%%%%%
+
+\section
+{Education}
+{Education}
+{PDF:Education}
+
+\href{http://www.iitr.ac.in/}
+{\textbf{Indian Institute of Technology Roorkee}},
+Roorkee, Uttarakhand, India
+
+\SmallEntryGap
+Bachelor of Technology (B.Tech.) 
+\SmallEntryGap
+\href{}
+{Major: Electrical Engineering, Minor: Computer Science }
+\hfill
+\DatestampYMD{2013}{07}{15} --
+\DatestampYMD{2017}{05}{15}
+\begin{detail}
+\BulletItem
+Cumulative GPA: 8.522 / 10.0
+\end{detail}
+
+\EntryGap
+{\textbf{St. Paul's Church College},
+Agra, Uttar Pradesh, India
+\par
+Twelfth(ISC Board)
+\hfill
+\DatestampYMD{2010}{07}{15} --
+\DatestampYMD{2012}{05}{15}
+\begin{detail}
+\BulletItem
+Percentage : 96.00
+\end{detail}
+\SmallEntryGap
+Tenth(ICSE Board)
+\hfill
+\DatestampYMD{2008}{07}{15} --
+\DatestampYMD{2010}{05}{15}
+\begin{detail}
+\BulletItem
+Percentage : 91.28
+\end{detail}
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%% AREAS OF INTERESTS %%
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section
+{Areas of \newline Interest}
+{Areas of Interest}
+{PDF:Areas Of Interset}
+
+Robotics and Control, Digital Image Processing, Software Development
+\EntryGap
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Projects %%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\section
+{Work Experience}{}{}
+{\textbf{Signzy Technologies Pvt Ltd}}
+\par 
+{\textbf{Software Development Internship}}
+\hfill
+\DatestampYMD{2016}{05}{15} -- \DatestampYMD{2016}{07}{20} 
+\begin{detail}
+
+{\textbf{Backend Engineering}}
+\BulletItem
+Design and implementation of highload, scalable and fault-tolerant backend servers systems using Node.js .
+\BulletItem
+Constructed several REST APIs to handle HTTP POST|GET requests and deliver data in JSON format, using LoopBack framework.
+\BulletItem
+Major applications developed were Digital Contracting System, Merchant Onboarding system, Aadhaar based Biometric
+Attendance System.
+
+
+{\textbf{Image Processing}}
+\BulletItem
+Worked on the extraction of data from images of Government Id cards using OpenCV.
+\BulletItem
+A robust system was developed which extracts important data and sends it to an OCR system.
+\BulletItem
+Image Fraud Detection i.e. detection of image splicing and image forgery was done based on gray level co-occurrence
+matrix (GLCM) of the thresholded edge image of image chroma.
+\BulletItem
+Support Vector Machine was utilised as a classifier, an accuracy of approximately 80% was achieved.
+\par
+
+\end{detail}
+\section
+{Projects}
+{Research Experience}
+{PDF:ResearchExperience}
+
+{\textbf{Electrical Engineering Department,IIT Roorkee}}
+\par
+{\textbf{Real Time Control of Active Flexible Needle}}
+\hfill
+\DatestampYMD{2016}{02}{01} --
+Present
+\begin{detail}
+\BulletItem
+The objective is to design and develop a 4 degree of freedom(DOF) discretely actuated steerable cannula with shape
+memory alloy(SMA) actuators.
+\BulletItem
+Complete simulation of the Active Flexible needle i.e. steerable cannula has been done in MATLAB.
+\BulletItem
+A pulsewidth modulation (PWM)based control scheme will be implemented to control all SMA actuators simultaneously to
+enable multiple joint motions using a single power supply.
+\BulletItem
+We will be using two feedback options for closed loop control of SMA actuators: Vision-based feedback and temperature
+feedback.
+\BulletItem
+Initially, we will be working on PID control, after successful implementation will proceed for Intelligent Control.
+Complete simulation of the Active Flexible needle i.e. steerable cannula is done in MATLAB.
+\end{detail}
+
+\EntryGap
+{\textbf{Electrical Engineering Department,IIT Roorkee}}
+\par
+\href{https://drive.google.com/file/d/0B_52cv1ZRKUmWXVsNlA4cXF2LWR3Skxsb2ctSHRtMmFBQlRz/view?usp=sharing}
+{\textbf{Liver Disease Diagnosis using Support Vector Machine and comparison \newline with MLP and LVQ}}
+\hfill
+\DatestampYMD{2016}{03}{01} -- \DatestampYMD{2016}{04}{01}
+\begin{detail}
+\BulletItem
+Liver Patient classification model was made using support vector machine(SVM), analysis was carried out on Indian Liver Patient Dataset. 
+\BulletItem
+Support Vector Machine was implemented using LIBSVM library in MATLAB. 
+\BulletItem
+Classification was also done using multilayer feedforward network(MLP) and learning vector quantization(LVQ) for comparison against SVM algorithm.
+\end{detail}
+
+\EntryGap
+
+{\textbf{ABU Robocon 2015}}
+\par
+{\textbf{Badminton Playing Robots}}
+\hfill
+\DatestampYMD{2014}{08}{01} --
+\DatestampYMD{2015}{02}{28}
+\begin{detail}
+
+\BulletItem
+Worked on trajectory detection and estimation of shuttlecock using computer vision, OpenCV library was utilised and OpenCl was used for hardware accelerated image processing. 
+\BulletItem
+Developed a control algorithm for navigation of four-wheel mecanum and four-wheel omni drive, using PID control. 
+\BulletItem
+Developed an algorithm for autonomous motion of robots using regression analysis. 
+\BulletItem
+Manual control of robots was done using PS3 controller, which communicated with robots through Bluetooth. 
+\BulletItem
+Designed double layer PCBs using eagle design software. 
+\BulletItem
+Arduino Mega and Atmel microcontrollers were used in both the bots.
+\end{detail}
+
+\EntryGap
+
+
+{\textbf{Alternate Hydro Energy Centre, IIT Roorkee}}
+\par
+{\textbf{Solarification of BEG \& C Cantonment, Roorkee}}
+\hfill
+\DatestampYMD{2015}{01}{01} --
+\DatestampYMD{2015}{05}{01}
+
+\begin{detail}
+\BulletItem
+Was a member of the 8 member team for preparation of a Detailed Project Report for Solarification of BEG \& C Cantonment Roorkee. 
+\BulletItem
+This detailed project report presents the potential and feasibility of a complete solar solution at BEG \& C, Roorkee cantonment. 
+\BulletItem
+Survey of the whole cantonment campus was carried out and solarification solution was provided accordingly. 
+\BulletItem
+If implemented well this project will enhance solar utilisation of the cantonment and will serve as an excellent demonstration project.
+\end{detail}
+
+\EntryGap
+
+{\textbf{Electrical Engineering Department, IIT Roorkee}}
+\par
+\href{https://drive.google.com/file/d/0B_52cv1ZRKUmQS1nVHp5WHRZUGM/view?usp=sharing}
+{\textbf{State Feedback Controller Design for Magnetic Levitation System}}
+\hfill
+\DatestampYMD{2015}{10}{01} --
+\DatestampYMD{2015}{11}{30}
+\begin{detail}
+\BulletItem
+Carried out analysis of non-linear and unstable dynamic model of Magnetic Levitation System. 
+\BulletItem
+State space model of Magnetic Levitation System was designed and simulated using MATLAB.
+\BulletItem
+Designed a linear full state feedback controller by linearizing the model around the equilibrium point and simulated it using MATLAB.
+\end{detail}
+
+\EntryGap
+
+{\textbf{Models And Robotics Section ,IIT Roorkee}}
+\par
+\href{https://drive.google.com/file/d/0B_52cv1ZRKUmYlZXY2xYbGVYR3M/view?usp=sharing}
+{\textbf{Human Arm Copy}}
+\hfill
+\DatestampYMD{2014}{01}{01} --
+\DatestampYMD{2014}{03}{10}
+\begin{detail}
+\BulletItem
+Designed and fabricated a robotic arm having 4 degrees of freedom. 
+\BulletItem
+Made a manually controlled arm whose motion was replicated by the robotic arm. 
+\BulletItem
+Sensors used for feedback from the manually controlled arm included accelerometers and optical rotary encoder. 
+\BulletItem
+We achieved the second position for this project in the annual Hobbies Club Exhibition 2013.
+\end{detail}
+
+
+
+%%%%%%%%%%%%%%%
+%% LANGUAGES %%
+%%%%%%%%%%%%%%%
+
+\section
+{Languages}
+{Languages}
+{PDF:Languages}
+
+English: Full Professional Proficiency (speaking, reading, writing).
+\par
+Hindi: Native language.
+
+%%%%%%%%%%%%
+%% SKILLS %%
+%%%%%%%%%%%%
+
+\section
+{Computer \newline Skills}
+{Skills}
+{PDF:Skills}
+
+{\textbf{Computer Languages}}: C++, Javascript, Python, SQL, MongoDB.
+\SmallEntryGap
+{\textbf{OS}}: GNU/Linux (Ubuntu), Microsoft Windows.
+\SmallEntryGap
+{\textbf{Software Packages}}: MATLAB, Xilinx ISE Design Suite , Solidworks, Eagle, Arduino, Microsoft Visual Studio, Adobe Premiere Pro.
+\SmallEntryGap
+{\textbf{Libraries}}: OpenCV, OpenCL, scikit-learn.
+\SmallEntryGap
+{\textbf{Other}}: Git, \LaTeX.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACADEMIC HONORS & AWARDS %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section
+{Academic \newline
+Achievements}
+{Academic Honors \& Awards}
+{PDF:AcademicHonorsAwards}
+
+\BulletItem
+Achieved an All India Rank of 1567 in JEE Advanced 2013.
+
+\SmallEntryGap
+
+\BulletItem
+Qualified for the Award of Scholarship for Higher Education by virtue
+of performance within top 1 percent of ISC Board at Class XII Examination.
+
+\SmallEntryGap
+\BulletItem
+ Awarded M.Tinkoo Memorial Award for achieving Rank 1 in Science
+Stream in School at Class XII level Examination.
+
+%%
+
+\section
+{Relevant Courses}
+{Relevant Courses}
+{PDF:Relevant Courses}
+
+Analog Electronics, Digital Electronics, Design of Electronic Circuits,
+Control Systems, Microprocessors, Single Chip Microcontrollers, Robotics and Control, Digital Image Processing(MOOC), Machine Learning(MOOC), Developing Innovative Ideas for New Companies(MOOC), Artificial Nueral Networks, Operating Systems, Operations and Supply Chain Management, Database Management Systems*, Theory of Computation*, Advanced System Engineering*.
+\SmallEntryGap
+[*denotes course taken in Autumn 2016]
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%% CAMPUS ACTIVITIES %%
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\section
+{Campus Activities}
+{Campus Activities}
+{PDF:CampusActivities}
+
+
+{\textbf{Hobbies Club, IIT Roorkee}}
+\par 
+General Secretary
+\hfill
+\DatestampYMD{2016}{07}{15} --
+Present
+\begin{detail}
+\BulletItem
+Leading a team of 9 secretaries for managing the activities of the Hobbies Club of IIT Roorkee, which includes sections
+like Electronics, Models and Robotics, Software Development, Design Studio, Fine Arts, Photography etc. for the session
+2016-2017.
+\BulletItem
+Managing a Budget of Rs. 14 lakhs to organize lectures, workshops, competitions and funding various extensive projects
+which get an overall participation of 1000+ proficiency holders.
+
+\end{detail}
+
+\EntryGap
+{\textbf{Fuzzylogix- The Big Reveal }}
+\hfill
+\DatestampYMD{2016}{03}{10}
+\begin{detail}
+\BulletItem
+Achieved the first position in a Data Analytics Competition organised by Fuzzy Logix.
+\BulletItem
+The problem statement was to find the right patterns in data to solve real-world problems.
+\BulletItem
+Provided a solution for Optimisation of maintenance/renewal activities of Railway Tracks by investigating and determining
+the relationships between track degradation and track structure, maintenance, as well as operational factors, for relevant
+operating conditions.
+\end{detail}
+
+\EntryGap
+
+{\textbf{Models and Robotics Section, IIT Roorkee }}
+\par
+Joint Secretary
+\hfill
+\DatestampYMD{2014}{08}{15} --
+\DatestampYMD{2015}{03}{30}
+\begin{detail}
+\BulletItem
+Organized all sorts of activities related to Robotics in college which include organizing lectures and workshops, spreading
+awareness among students and introducing them to new technologies and advancements in the field of Robotics.
+\BulletItem
+Floated, mentored and ensured the completion of five projects including wireless surveillance robot, smart shower system
+and a maze solving robot. 
+\end{detail}
+
+\EntryGap
+
+{\textbf{Team Robocon, IIT Roorkee }}
+\par
+Technical Team Member
+\hfill
+\DatestampYMD{2014}{03}{15} --
+\DatestampYMD{2016}{03}{30}
+\begin{detail}
+\BulletItem
+Member of Electronics and Automation team of Team ROBOCON, IIT Roorkee. The Asia-Pacific Robot Contest (ABU
+Robocon) is an Asian Oceanian College robot competition.
+\BulletItem
+We achieved National Rank 5th and Best Aesthetic Award in ABU ROBOCON 2016, Pune.
+\end{detail}
+\SmallEntryGap
+Finance and Marketing Head
+\hfill
+\DatestampYMD{2015}{03}{15} --
+\DatestampYMD{2016}{03}{30}
+\begin{detail}
+\BulletItem
+Being the Finance and Marketing Head of the Team, for the session 2015-2016, helped in bringing sponsorship worth Rs
+1.3 lakhs for the team and responsible for managing all the publicity, logistics, transactions and general management.
+
+\end{detail}
+\EntryGap
+
+{\textbf{Cyborg Break-In, Cognizance IIT Roorkee }}
+\par
+Coordinator
+\hfill
+\DatestampYMD{2015}{03}{03}
+\begin{detail}
+\BulletItem
+Was the Leader of the organising team of one of the largest centre stage robotics event Cyborg Break-In in Cognizance
+the technical festival of IIT Roorkee.
+\BulletItem
+More than 200 college students from all over the country participated in the event to exercise their robotic niche.The
+event was a great success.
+
+\end{detail}
+
+\EntryGap
+
+{\textbf{Students Affair Council,IIT Roorkee }}
+\par
+Senator
+\hfill
+\DatestampYMD{2013}{08}{15}--
+\DatestampYMD{2014}{04}{30}
+\begin{detail}
+\BulletItem
+Was a student representative as a Bhawan councillor and Senator in Students Affair Council, IIT Roorkee involved in
+activities throughout the year for the welfare of the students of IIT Roorkee.
+\end{detail}
+
+\EntryGap
+
+{\textbf{Sankalp, IIT Roorkee }}
+\par
+Co-Coordinator
+\hfill
+\DatestampYMD{2014}{03}{13}
+\begin{detail}
+Organised Carpediem a short film/documentary making competition during Sankalp,A fest organised by NSS IIT Roorkee.
+The event attracted the nation-wide participation of over 50 movie makers.
+\end{detail}
+
+\EntryGap
+
+{\textbf{National Cadets Corps (NCC)}}
+\par{}
+Cadet 3UK CTR
+\hfill
+\DatestampYMD{2013}{07}{15}--
+\DatestampYMD{2014}{04}{15}
+\begin{detail}
+Successfully completed NCC training. Actively took part in the annual ten day training camp, weapon training, combat
+techniques, cleanliness drive and other social awareness activities.
+\end{detail}
+
+%%%%%%%%%%%%%%%%
+%% REFERENCES %%
+%%%%%%%%%%%%%%%%
+
+\section
+{References}
+{References}
+{PDF:References}
+
+Available on Request
+
+
+
+\end{body}
+
+%%%%%%%%%%%
+% CV NOTE %
+%%%%%%%%%%%
+
+\begin{flushright}
+\scriptsize%
+[\textit{\CVNote}]%
+\hspace{2.0mm}\null
+\end{flushright}
+
+\label{LastPage}~
+\end{document}
